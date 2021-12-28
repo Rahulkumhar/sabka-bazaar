@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabka Bazaar</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../pages/css/cart.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("../pages/common/header.html");
+      });
+      $(function () {
+        $("#footer").load("../pages/common/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header-section content-center" id="header"></header>
+      <hr class="divider-border" />
+      <section class="product-container content-center">
+        <section class="product-section">
+          <ul id="category-items" class="category-items">
+            <!-- <li class="products-lists">Fruits & Vegetables</li>
+          <li class="products-lists">Bakery Cakes and Dairy</li>
+          <li class="products-lists">Beverages</li>
+          <li class="products-lists">Beauty and Hygiene</li>
+          <li class="products-lists">Baby Care</li> -->
+          </ul>
+        </section>
+        <section class="product-details" id="main-product-details">
+          <!-- product details listing -->
+        </section>
+        <section>
+          <!-- Cart container -->
+          <section id="product-cart-details" class="product-cart-details">
+            <section class="top-cart-section">
+              <h3>MyCart(<small id="cart-box">0 item</small>)</h3>
+              <h3 class="closeBtn" onclick="closeCart()">X</h3>
+            </section>
+            <div class="cart-details" id="cart-details-cal">
+              <div class="no-product-detail" id="no-product-detail">
+                <h4>No items in your cart</h4>
+                <p>Your favourite items are just a click away</p>
+              </div>
+            </div>
+            <!-- <div class="cart-details" id="cart-details-cal">
+          <div class="cart-detail">
+              <img
+              class="cart-detail-img"
+              src="images/products/fruit-n-veg/apple.jpg"
+              alt=""
+              />
+            <div class="cart-item-detail">
+              <h4>Apple-Washington,Regular,4 pcs</h4>
+              <button class="btn--small" onclick="desQty()">-</button>
+              <span class="item-detail" id="cart-value-qty">1</span>
+              <button class="btn--small" onclick="insQty()">+</button>
+              <span class="item-detail">x</span>
+              <span id="cart-qty-price">Rs.187</span>
+            </div>
+          </div>
+          
+          <div class="cart-price common-padding"><span id="cart-qty-price">Rs.187</span></div>
+        </div> -->
+            <div class="content-details-cart" id="content-details-cart">
+              <img src="images/lowest-price.png" alt="" />
+              <h3>You won't find it cheaper anywhere</h3>
+            </div>
+            <div class="blank-div-cart" id="blank-div-cart"></div>
+
+            <div class="procced-details-cart" id="procced-details-cart">
+              <div>
+                <p class="procced-msg">
+                  Promo code can be applied on payment page
+                </p>
+              </div>
+              <div class="btn process-content">
+                <div>Procced to Checkout</div>
+                <div>Rs.<span id="cart-qty-price">187 </span></div>
+              </div>
+            </div>
+            <div
+              class="procced-details-cart-processed"
+              id="procced-details-cart-processed"
+            >
+              <div class="btn">
+                <div>Start Shopping</div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+      <footer class="footer-section" id="footer"></footer>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/pages/js/main.js" type="text/javascript" defer></script>
+  </body>
+</html>

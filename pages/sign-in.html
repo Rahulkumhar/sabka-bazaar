@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Kart</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("../pages/common/header.html");
+      });
+      $(function () {
+        $("#footer").load("../pages/common/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <header class="header-section content-center" id="header"></header>
+    <hr class="divider-border" />
+    <div class="signup-container content-center-register">
+      <section class="signup-text">
+        <h2>Login</h2>
+        <p>Get Access to your Orders.Wishlist and Recommendations</p>
+      </section>
+      <section class="signup-form">
+        <form class="cta-form" name="sign-up">
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required />
+          </div>
+          <div class="last-box-margin">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" required />
+          </div>
+          <button class="btn">Login</button>
+
+          <!-- <input type="checkbox" />
+          <input type="number" /> -->
+        </form>
+      </section>
+    </div>
+    <footer class="footer-section" id="footer"></footer>
+  </body>
+</html>
